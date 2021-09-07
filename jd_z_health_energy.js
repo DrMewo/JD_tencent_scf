@@ -1,19 +1,3 @@
-/*
-健康社区-收能量
-
-更新地址：https://share.r2ray.com/dust/i-chenzhe/z_health_energy.js
-============Quantumultx===============
-[task_local]
-#健康社区-收能量
-25 0,6-23 * * * https://share.r2ray.com/dust/i-chenzhe/z_health_energy.js, tag=健康社区-收能量,  enabled=true
-================Loon==============
-[Script]
-cron "25 0,6-23 * * *" script-path=https://share.r2ray.com/dust/i-chenzhe/z_health_energy.js,tag=健康社区-收能量
-===============Surge=================
-健康社区-收能量 = type=cron,cronexp="25 0,6-23 * * *",wake-system=1,timeout=3600,script-path=https://share.r2ray.com/dust/i-chenzhe/z_health_energy.js
-============小火箭=========
-健康社区-收能量 = type=cron,script-path=https://share.r2ray.com/dust/i-chenzhe/z_health_energy.js, cronexpr="25 0,6-23 * * *", timeout=3600, enable=true
-*/
 const $ = new Env('健康社区收取能量');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
