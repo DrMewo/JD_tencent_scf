@@ -2,9 +2,6 @@
 update date ：2021.07.15
 #自定义互助码变量，仅支持单个互助码
 export TYT_PACKETID=""
- [task_local]
-#柠檬推一推
-0 6-23/4 * * * http://nm66.top/jd_tyt.js, tag=柠檬推一推, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 注意：助力码每天会变，旧的不可用。
 助力逻辑：优先助力互助码变量，北京时间15点后默认会助力【zero205】，介意请勿运行！
 */
